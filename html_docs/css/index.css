@@ -1,0 +1,167 @@
+/* 首页CSS文件 */
+header {
+    /* 子元素可继承属性 */
+    color: #fff;
+    text-align: center;
+    padding-top: 175px;
+    box-sizing: border-box;
+}
+
+header h2 {
+    font-size: 21px;
+}
+
+header h1 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+section {
+    margin: 30px 0;
+    text-align: center;
+    color: #4e4e4e;
+    /* 避免页面被挤压太窄布局错乱 */
+    min-width: 800px;
+    max-width: 100vw;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+section p.subtitle {
+    margin-bottom: 36px;
+    font-size: 20px;
+}
+
+
+.gallary ul {
+    margin: 0;
+    padding: 0 40px 50px;
+    overflow-x: scroll;
+    display: flex;
+}
+
+.gallary li {
+    /* 避免被挤压 */
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-left: 40px;
+    width: 150px;
+    height: 220px;
+    padding: 10px;
+    box-shadow: 0 30px 30px 0 rgba(140, 153, 191, 0.20);
+}
+
+li.gallary-add {
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallary-add img {
+    width: 72px;
+    height: 75px;
+}
+
+.gallary-item>* {
+    text-align: left;
+}
+
+.gallary-item img {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;/*保持原有尺寸比例。但部分内容可能被剪切。*/
+}
+
+.gallary-item p {
+    font-size: 10px;
+    /* 超过一行显示"..." */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.gallary-item p.name {
+    margin-top: 10px;
+    color: #4e4e4e;
+}
+
+.gallary-item p.photographer {
+    margin-top: 4px;
+    color: #9c9c9c;
+}
+
+.gallary-item p.desc {
+    margin-top: 6px;
+    color: #9c9c9c;
+    font-size: 8px;
+    /* 超过多行显示...(可选) */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /* 覆盖属性 white-space: nowrap */
+    white-space: normal;
+}
+
+.about-wrap{ 
+display: flex; 
+justify-content:center; 
+justify-content: space-around; 
+overflow-x: scroll; 
+} 
+.about-item{ 
+display: flex; 
+flex-direction: column; 
+} 
+.about-item.avatar { 
+align-items: center; 
+border:1px solid #b1b1b1; 
+border-radius:5px; 
+padding: 10px; 
+width:150px; 
+/* height:180px; */ 
+box-sizing: border-box; 
+}
+.about-item.avatar.name { 
+margin-top:5px; 
+color: #333; 
+font-size:15px; 
+} 
+.about-item.avatar.course { 
+margin-top:2px; 
+color: #4e4e4e; 
+font-size:11px; 
+} 
+.about-item.avatar.desc { 
+color: #9c9c9c; 
+font-size:10px; 
+margin-top:5px; 
+} 
+.about-item.avatar img { 
+width: 95px; 
+height:95px; 
+border-radius: 50%; 
+} 
+.about-item.title { 
+color: #95a9b1; 
+font-size:18px; 
+margin-bottom: 22px; 
+} 
+.about-item h3{ 
+text-align:left; 
+} 
+.about-item ul{ 
+list-style-type: none; 
+text-align: left; 
+
+padding-left:0; 
+}
+.about-item a{ 
+color:#98b8f6; 
+font-size:12px; 
+} 

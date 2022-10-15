@@ -1,0 +1,99 @@
+/* 覆盖浏览器默认值 */
+
+html,
+body,
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+html {
+    font-family: 'PingFang SC';
+    box-sizing: border-box;
+}
+
+body {
+    /* #ffffff可缩写为#fff */
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 页面主体结构 */
+
+header {
+    height: 470px;
+    background: #1677FF;
+}
+
+main {
+    /* 纵向撑满屏幕，将footer挤到页面底部 */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+/* 导航栏 */
+
+nav {
+    /* 导航栏悬浮在其他元素上层，采用绝对定位 */
+    position: fixed;
+    padding: 0 80px;
+    left: 0;
+    right: 0;
+    top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+nav .logo {
+    /* 占满剩余空间，将其他元素挤到最右侧 */
+    flex: 1.0;
+}
+
+nav .logo img {
+    width: 150px;
+    height: 36px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 16px;
+    font-family: Helvetica;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 18px;
+}
+
+nav .search img {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* 页脚 */
+
+footer {
+    padding: 0 80px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+footer span {
+    flex: 1.0;
+}
+
+footer img {
+    width: 24px;
+    height: 18px;
+}
